@@ -1,0 +1,433 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    scroll-behavior: smooth;
+}
+
+/* General Styles */
+body {
+    width: 100%;
+    height: 100vh;
+    background: #171717;
+  }
+
+  nav{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 5%;
+    margin-bottom: 20px;
+    background: #171717;
+  }
+
+  nav .logo h1{
+    font-size: 25px;
+    color: #fff;
+    cursor: pointer;
+  }
+  
+  nav .logo h1 span{
+    color: #ffe100;
+    margin-left: 8px;
+    text-decoration: underline;
+  }
+
+  .logo a{
+    text-decoration: none;
+    color: #fff;
+  }
+
+  .search-bar {
+    display: flex;
+    align-items: center;
+    background-color: #333;
+    border-radius: 25px;
+    padding: 8px 15px;
+    gap: 10px;
+    min-width: 300px;
+    font-size: 18px;
+    color: #aaa;
+  }
+
+  .search-bar input {
+    background: none;
+    border: none;
+    outline: none;
+    color: white;
+    font-size: 16px;
+    flex: 1;
+  }
+
+  .search-bar a{
+    color: #aaa;
+  }
+
+  .search-bar input::placeholder{
+    color: #aaa;
+  }
+
+
+
+  .second{
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    padding-bottom: 25px;
+    background: #171717;
+    overflow-x: hidden;
+  }
+  
+  .second .latest{
+    width: 95%;
+    margin: 0 auto;
+  }
+  
+  .second .latest h1{
+    cursor: default;
+    font-size: 20px;
+    color: #fff;
+    margin-bottom: 20px;
+  }
+  
+  .second .latest .box{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-left: 50px;
+    margin-right: 50px;
+    gap: 10px;
+    padding-bottom: 10px;
+  }
+  
+  .second .latest .box .card{
+    width: 233px;
+    height: 370px;
+    flex: 0 0 auto;
+    margin: 10px 0;
+    overflow: hidden;
+    border-radius: 8px;
+    position: relative;
+  }
+  
+  .second .latest .box .card .details{
+    width: 233px;
+    height: 370px;
+    overflow: hidden;
+    position: absolute;
+    border-radius: 8px;
+    transition: 0.3s;
+    transition: 0.3s;
+    opacity: 0;
+  }
+  
+  .second .latest .box .card:hover .details{
+    opacity: 1;
+    background: linear-gradient(to bottom, rgba(0,0,0,0.0), rgba(0,0,0,0.7));
+  }
+  
+  .second .latest .box .card .details .left{
+    position: absolute;
+    bottom: 0;
+    color: #fff;
+    transform: translateX(-100px);
+    transition: 0.4s;
+    opacity: 0;
+  }
+  
+  .second .latest .box .card:hover .details .left{
+    opacity: 1;
+    transform: translateX(0);
+  }
+  
+  .second .latest .box .card .details .left p.name{
+    width: 100%;
+    font-size: 18px;
+    font-weight: bold;
+    margin-left: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .second .latest .box .card .details .left .date_quality{
+    display: flex;
+    align-items: center;
+  }
+  
+  .second .latest .box .card .details .left .date_quality p.quality{
+    width: 30px;
+    font-size: 13px;
+    background: #ffe100;
+    color: #282931;
+    margin-left: 10px;
+    margin-bottom: 8px;
+    text-align: center;
+    font-weight: bold;
+  }
+  
+  .second .latest .box .card .details .left .date_quality p.date{
+    color: #fff;
+    font-size: 15px;
+    font-weight: bold;
+    text-align: left;
+    margin-left: 10px;
+    margin-bottom: 8px;
+  }
+  
+  .second .latest .box .card .details .left p.category{
+    margin-left: 10px;
+    font-size: 13px;
+    margin-bottom: 8px;
+  }
+  
+  .second .latest .box .card .details .left .info{
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .second .latest .box .card .details .left .info .rate{
+    display: flex;
+    align-items: center;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  
+  .second .latest .box .card .details .left .info .rate i{
+    font-size: 12px;
+    color: #ffd500;
+    margin-right: 5px;
+  }
+  
+  .second .latest .box .card .details .left .info .rate p{
+    font-size: 12px;
+  }
+  
+  .second .latest .box .card .details .left .info .time{
+    display: flex;
+    align-items: center;
+  }
+  
+  .second .latest .box .card .details .left .info .time i{
+    font: 12px;
+    color: #ffd500;
+    margin-left: 5px;
+  }
+  
+  .second .latest .box .card .details .left .info .time p{
+    font-size: 12px;
+    margin-left: 15px;
+  }
+  
+  .second .latest .box .card .details .right{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    color: #fff;
+    transform: translateX(100px);
+    transition: 0.4s;
+    opacity: 0;
+  }
+  
+  .second .latest .box .card:hover .details .right{
+    opacity: 1;
+    transform: translateX(0);
+  }
+  
+  .second .latest .box .card .details .right i{
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 20px;
+    text-align: center;
+    background-color: #ffe100;
+    border-radius: 50%;
+    cursor: pointer;
+    color: #282931;
+    margin: 0 10px 8px 0;
+  }
+  
+  .second .latest .box .card img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+  }
+
+  p.end{
+    background: #171717;
+    text-align: center;
+    color: #cccccc;
+    padding: 15px 0;
+    font-size: 0.9rem;
+  }
+  
+  p.end span{
+    color: #ffe100;
+  }
+  
+  p.end span i{
+    margin: 0 5px;
+  }
+  
+  .more{
+    float: right;
+  }
+  
+  .more a{
+    text-decoration: none;
+    color: #fff;
+  }
+
+    .end a{
+    text-decoration: none;
+  }
+
+    .scroll-top-btn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #000; /* Black background */
+  color: #fff;            /* White arrow */
+  font-size: 20px;
+  border: none;
+  border-radius: 50%;     /* Make it perfectly round */
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+  z-index: 1000;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+
+  /* Strong box shadow to show on dark or light backgrounds */
+  box-shadow: 0 4px 10px rgba(255, 255, 255, 0.2), 
+              0 2px 4px rgba(0, 0, 0, 0.6);
+}
+
+.scroll-top-btn.show {
+  opacity: 1;
+  pointer-events: auto;
+  transform: scale(1.05);
+}
+
+.scroll-top-btn:hover {
+  transform: scale(1.1);
+}
+
+
+
+  @media (max-width: 1024px) {
+    .search-bar {
+        min-width: 250px;
+        margin-top: 10px;
+    }
+  }
+
+  @media (max-width: 800px) {
+    nav {
+        padding: 10px;
+    }
+
+    nav .logo h1 {
+        font-size: 22px;
+    }
+
+    .search-bar {
+      min-width: 250px;
+      margin-top: 10px;
+      padding: 8px;
+    }
+
+    .search-bar input {
+        font-size: 14px;
+    }
+
+    /* Always show the details */
+  .second .latest .box .card .details {
+    opacity: 1 !important;
+    background: linear-gradient(to bottom, rgba(0,0,0,0.0), rgba(0,0,0,0.7));
+    transform: none;
+  }
+
+  /* Always show both left and right sections */
+  .second .latest .box .card .details .left,
+  .second .latest .box .card .details .right {
+    opacity: 1 !important;
+    transform: none !important;
+  }
+
+  /* Disable hover animation on small screens */
+  .second .latest .box .card:hover .details,
+  .second .latest .box .card:hover .details .left,
+  .second .latest .box .card:hover .details .right {
+    opacity: 1;
+    transform: none;
+  }
+
+
+    
+  }
+
+  @media (max-width: 480px) {
+    nav {
+        padding: 10px;
+    }
+
+    nav .logo h1 {
+        font-size: 20px;
+    }
+
+    .search-bar {
+        min-width: 200px;
+        gap: 5px;
+        padding: 6px 10px;
+    }
+
+    .search-bar input {
+      font-size: 12px;
+    }
+
+  }
+
+@media (max-width: 600px) {
+  .second .latest .box {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    padding: 0 20px;
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+
+  .second .latest .box .card {
+    width: 200px;
+    height: 300px;
+  }
+
+  .second .latest .box .card .details{
+    width: 200px;
+    height: 300px;
+  }
+}
+
+
+
+@media (max-width: 430px) {
+  .second .latest .box {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 400px) {
+  .second .latest .box .card {
+    width: 180px;
+    height: 250px;
+  }
+
+  .second .latest .box .card .details{
+    width: 180px;
+    height: 250px;
+  }
+}
