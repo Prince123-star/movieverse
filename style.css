@@ -1105,3 +1105,57 @@ p.end span i{
     width: 100%;
   }
 }
+
+
+@media (max-width: 500px) {
+  .swiper-slide .image .black h1 {
+    font-size: 1.3rem;
+    width: 90%;
+    line-height: 1.3;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+  }
+
+  .swiper-slide .image .black p {
+    font-size: 0.9rem;
+    width: 90%;
+    line-height: 1.4;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+  }
+
+  .swiper-slide .image .black .star {
+    font-size: 0.85rem;
+    width: 90%;
+  }
+
+  .swiper-slide .image .black .genre {
+    font-size: 0.85rem;
+    width: 90%;
+  }
+
+  .swiper-slide .image .black .watch {
+    font-size: 0.85rem;
+    width: 90%;
+  }
+
+  .swiper-slide .image .black .watch p {
+    font-size: 0.85rem;
+  }
+
+  .swiper-slide img {
+    height: 100vh;
+    object-fit: cover;
+  }
+}
+
+
+@media (max-width: 400px) {
+  .swiper-slide .image .black h1 {
+    font-size: 1.1rem;
+    width: 90%;
+    line-height: 1.3;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+  }
+}
