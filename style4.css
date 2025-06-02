@@ -371,6 +371,17 @@ body {
   }
 
   @media (max-width: 480px) {
+      .second .latest .box .card .details .left p.name{
+      font-size: 0.95rem;
+    }
+      .second .latest .box .card .details .left .date_quality p.quality{
+      font-size: 12px;
+    }
+    .second .latest .box .card .details .left .date_quality p.date{
+      font-size: 14px;
+    }
+
+      
     nav {
         padding: 10px;
     }
