@@ -1118,7 +1118,7 @@ p.end span i{
 }
 
     .second .latest .box .card .details .left p.name{
-      font-size: 0.95rem;
+      font-size: 15px;
     }
 
     .second .latest .box .card .details .left .date_quality p.quality{
@@ -1130,7 +1130,7 @@ p.end span i{
     }
 
 .upcoming .movies_box .box .card .details .left p.name{
-      font-size: 0.95rem;
+      font-size: 15px;
     }
 
     .upcoming .movies_box .box .card .details .left .date_quality p.quality{
@@ -1142,7 +1142,7 @@ p.end span i{
     }
 
 .show .tv_show .box .card .details .left p.name{
-      font-size: 0.95rem;
+      font-size: 15px;
     }
 
     .show .tv_show .box .card .details .left .date_quality p.quality{
