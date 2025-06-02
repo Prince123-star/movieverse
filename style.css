@@ -1117,6 +1117,42 @@ p.end span i{
     font-size: 20px;
 }
 
+    .second .latest .box .card .details .left p.name{
+      font-size: 0.95rem;
+    }
+
+    .second .latest .box .card .details .left .date_quality p.quality{
+      font-size: 12px;
+    }
+
+    .second .latest .box .card .details .left .date_quality p.date{
+      font-size: 14px;
+    }
+
+.upcoming .movies_box .box .card .details .left p.name{
+      font-size: 0.95rem;
+    }
+
+    .upcoming .movies_box .box .card .details .left .date_quality p.quality{
+      font-size: 12px;
+    }
+
+    .upcoming .movies_box .box .card .details .left .date_quality p.date{
+      font-size: 14px;
+    }
+
+.show .tv_show .box .card .details .left p.name{
+      font-size: 0.95rem;
+    }
+
+    .show .tv_show .box .card .details .left .date_quality p.quality{
+      font-size: 12px;
+    }
+
+    .show .tv_show .box .card .details .left .date_quality p.date{
+      font-size: 14px;
+    }
+
     
   .swiper-slide .image .black h1 {
     font-size: 1.3rem;
