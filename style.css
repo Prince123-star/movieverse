@@ -966,6 +966,11 @@ p.end span i{
 }
 
 @media (max-width: 800px) {
+      section nav .logo h1{
+    font-size: 22px;
+}
+
+    
   /* navbar */
   .menu-button{
     display: block;
@@ -1108,6 +1113,11 @@ p.end span i{
 
 
 @media (max-width: 500px) {
+      section nav .logo h1{
+    font-size: 20px;
+}
+
+    
   .swiper-slide .image .black h1 {
     font-size: 1.3rem;
     width: 90%;
