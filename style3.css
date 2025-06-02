@@ -373,7 +373,7 @@ body {
 
   @media (max-width: 480px) {
       .second .latest .box .card .details .left p.name{
-      font-size: 15px;
+      font-size: 0.9375rem;
     }
       .second .latest .box .card .details .left .date_quality p.quality{
       font-size: 12px;
